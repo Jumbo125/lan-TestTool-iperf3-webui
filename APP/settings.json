@@ -1,0 +1,7 @@
+{
+  "web_host": "0.0.0.0",
+  "web_port": 5000,
+  "iperf_port": 5201,
+  "default_target": "",
+  "default_iface": ""
+}

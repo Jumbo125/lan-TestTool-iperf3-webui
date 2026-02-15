@@ -1,0 +1,17 @@
+﻿{
+    "Date":  {
+                 "value":  "\/Date(1770916809222)\/",
+                 "DisplayHint":  2,
+                 "DateTime":  "Donnerstag, 12. Februar 2026 18:20:09"
+             },
+    "Interface":  "Ethernet",
+    "DHCP":  false,
+    "IP":  "192.168.10.1",
+    "Prefix":  24,
+    "Gateway":  null,
+    "DNS":  [
+                "fec0:0:0:ffff::1",
+                "fec0:0:0:ffff::2",
+                "fec0:0:0:ffff::3"
+            ]
+}
