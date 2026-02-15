@@ -11,6 +11,9 @@ Direkt-LAN-Messungen zwischen zwei Rechnern (**PC A / PC B**) mit:
 **Autor:** Jumbo125  
 **Lizenz:** MIT
 
+
+- Originalprojekt: MaddyDev-glitch  
+- Fork/Weiterentwicklung: Jumbo125
 ---
 
 ## Was hat sich geändert?
@@ -20,11 +23,15 @@ Direkt-LAN-Messungen zwischen zwei Rechnern (**PC A / PC B**) mit:
   - **Windows:** PowerShell-Menü `Setup_IP/ip_setup.ps1` (Start über `Start_win.bat`)
   - **Linux:** Bash-Menü `Start_Linux.sh` (setzt IP/Firewall/Start in neuem Terminal)
 
-### WebUI ist jetzt OS-agnostisch (Windows oder Linux)
+### WebUI ist OS-agnostisch (Windows oder Linux)
 - Läuft auf **Windows oder Linux**
 - **iPerf3-Binary wird automatisch je nach OS/Architektur gewählt:**
   - **Windows:** `..\IPERF\iperf3.exe` (falls vorhanden), sonst `iperf3` aus `PATH`
   - **Linux:** `..\IPERF\iperf3-amd64` oder `..\IPERF\iperf3-arm64v8` (macht `chmod +x`), sonst `iperf3` aus `PATH`
+ 
+### CRC UND FCS Troubleshooting
+- Fehlerindikatoren: Kabelbruch, zu langes Kabel, schlechte Stecker/Knicks
+(CRC/FCS & Co.)
 
 ### Stabilitäts-Änderungen (PATCH 2026-02-13)
 - `/run_iperf` blockiert nicht mehr durch langsame Counter-Reads:
